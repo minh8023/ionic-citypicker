@@ -1,4 +1,4 @@
-var app = angular.module('ionic-cityPicker', ['ionic']);
+var app = angular.module('ionic-citydata', ['ionic']);
 app.service('CityPickerService', function () {
 this.cityList = [
     {

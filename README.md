@@ -22,7 +22,7 @@
 在 `app.js`里写入文件依赖
 
 ````html
-angular.module('myApp', ['ionic-citypicker']);
+angular.module('myApp', ['ionic-citydata','ionic-citypicker']);
 ```` 
 需要城市选择的地方写入
  
