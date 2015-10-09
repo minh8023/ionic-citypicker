@@ -1,0 +1,39 @@
+<div  ng-class="{'city-picker-backdrop' : vm.backdrop }">
+<ion-modal-view  class="city-picker-bg">
+<div class="city-bgclose" ng-click="vm.ClickToClose()" ></div>
+<div class="city-picker ">
+  <header class=" bar city-picker-header" ng-class="vm.barCssClass">
+      <h1 class="title"></h1>
+      <div class="buttons">
+        <button class="button" ng-click="vm.returnok()">{{vm.okText}}</button>
+      </div>
+  </header>
+  <div class="city-picker-inner has-header">
+    <div class="row ">
+      <div class="col col-33">
+        <ion-scroll delegate-handle={{vm.provinceHandle}}  on-scroll="vm.getData('province')" scrollbar-y=false >
+          <ul >
+            <li ng-repeat="province in vm.cityData" >{{province.name}}</li>
+          </ul>
+        </ion-scroll>
+      </div>
+      <div class="col col-33">
+        <ion-scroll delegate-handle={{vm.cityHandle}}  on-scroll="vm.getData('city')" scrollbar-y=false>
+          <ul >
+            <li  ng-repeat="city in vm.province.sub">{{city.name}}</li>
+          </ul>
+        </ion-scroll>
+      </div>
+      <div class="col col-33">
+        <ion-scroll delegate-handle={{vm.countryHandle}} on-scroll="vm.getData('country')" scrollbar-y=false>
+          <ul >
+            <li  ng-repeat="country in vm.city.sub" >{{country.name}}</li>
+          </ul>
+        </ion-scroll>
+      </div>
+  </div>
+  <div class="picker-center-highlight"></div>
+  </div>
+</div>
+</ion-modal-view>
+</div>

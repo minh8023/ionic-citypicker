@@ -1,0 +1,123 @@
+.city-picker-bg{
+    background:transparent;
+}
+.city-picker-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.1s opacity linear;
+    transition: 0.1s opacity linear;
+}
+.city-bgclose{
+    width: 100%;
+    height: 100%; 
+    z-index: 2;
+    position: absolute;
+}
+.city-picker{
+    z-index: 3;
+    position: absolute;
+    background: #cfd5da;
+    width: 100%;
+    height: 296px;
+    bottom: 0;
+}
+.city-picker .city-picker-header{
+    position: absolute;
+    height: 44px;
+    width: 100%;
+}
+.city-picker ion-scroll li {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 36px;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.city-picker .city-picker-inner{
+    height: 252px;position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: right;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-mask-box-image: -webkit-linear-gradient(bottom, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+    -webkit-mask-box-image: linear-gradient(to top, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+}
+.city-picker ion-scroll{
+  height: 252px;
+}
+.city-picker .scroll{
+    padding: 108px 0;
+}
+.city-picker .picker-center-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0px;
+  pointer-events: none;
+}
+.city-picker .picker-center-highlight:after {
+    position: absolute;
+    top: auto;
+    right: auto;
+    margin-bottom: -18px;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: block;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-color: rgba(255,255,255,.4);
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.city-picker .picker-center-highlight:before {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: 15;
+  display: block;
+  width: 100%;
+  height: 50%;
+  margin-top:-18px;
+  content: '';
+  background-color: rgba(255,255,255,.4);
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+       -o-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+.city-picker .row,.city-picker  .col{padding: 0;}
