@@ -27,7 +27,7 @@ angular.module('myApp', ['ionic-citydata','ionic-citypicker']);
 需要城市选择的地方写入
  
 ````html
-<ionic-city-picker placeholder="出发城市" tag="-" backdrop=true backdrop-click-to-close=false css-class="xxx" okText="确定" citydata="citydata"  button-clicked="vm.cb()" ></ionic-city-picker>
+<ionic-city-picker placeholder="出发城市" tag="-" backdrop=true backdrop-click-to-close=false css-class="xxx" ok-text="确定" citydata="citydata"  button-clicked="vm.cb()" ></ionic-city-picker>
 ````   
 
 ###一些配置
@@ -54,7 +54,8 @@ angular.module('myApp', ['ionic-citydata','ionic-citypicker']);
 
 ### 1) v0.1.0
 第一个版本提交
-
+### 2) v0.1.1
+修复没有区级城市的选择问题。
 
 ##还要做的:
 

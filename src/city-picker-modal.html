@@ -1,11 +1,11 @@
 <div  ng-class="{'city-picker-backdrop' : vm.backdrop }">
 <ion-modal-view  class="city-picker-bg">
-<div class="city-bgclose" ng-click="vm.ClickToClose()" ></div>
+<div class="city-bgclose" ng-click="vm.clickToClose()" ></div>
 <div class="city-picker ">
   <header class=" bar city-picker-header" ng-class="vm.barCssClass">
       <h1 class="title"></h1>
       <div class="buttons">
-        <button class="button" ng-click="vm.returnok()">{{vm.okText}}</button>
+        <button class="button" ng-click="vm.returnOk()">{{vm.okText}}</button>
       </div>
   </header>
   <div class="city-picker-inner has-header">

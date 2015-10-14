@@ -20,16 +20,16 @@ app.directive('ionicCityPicker', ['$ionicPopup', '$timeout','CityPickerService',
         vm.placeholder=attrs.placeholder || "请选择城市";
         vm.okText=attrs.okText || "确定";
         vm.cssClass=attrs.cssClass;
-        vm.barCssClass=attrs.barCssClass || "bar-dark";;
+        vm.barCssClass=attrs.barCssClass || "bar-dark";
         vm.backdrop=scope.$eval(scope.backdrop) || false;
         vm.backdropClickToClose=scope.$eval(scope.backdropClickToClose) || false;
         vm.cityData=CityPickerService.cityList;
         vm.tag=attrs.tag || "-";
-        vm.returnok=function(){
+        vm.returnOk=function(){
           citypickerModel && citypickerModel.hide();
           scope.buttonClicked && scope.buttonClicked();
         }
-        vm.ClickToClose=function(){
+        vm.clickToClose=function(){
           vm.backdropClickToClose && citypickerModel && citypickerModel.hide();
         }
         vm.getData=function(name){
@@ -61,7 +61,8 @@ app.directive('ionicCityPicker', ['$ionicPopup', '$timeout','CityPickerService',
                 country &&  (vm.country=vm.city.sub[index]);//处理乡数据
                 HandleChild && $ionicScrollDelegate.$getByHandle(HandleChild).scrollTop();//初始化子scroll top位
                 //数据同步
-                vm.city.sub ? (scope.citydata=vm.province.name +vm.tag+  vm.city.name+vm.tag+vm.country.name ) :(scope.citydata=vm.province.name +vm.tag+  vm.city.name)
+                console.log(vm.city.sub);
+                (vm.city.sub && vm.city.sub.length>0) ? (scope.citydata=vm.province.name +vm.tag+  vm.city.name+vm.tag+vm.country.name ) :(scope.citydata=vm.province.name +vm.tag+  vm.city.name)
             },150)
           }else{
             vm.scrolling=$timeout(function () {
@@ -70,9 +71,9 @@ app.directive('ionicCityPicker', ['$ionicPopup', '$timeout','CityPickerService',
           }
 
         }
+
         element.on("click", function () {
             //零时处理 点击过之后直接显示不再创建
-            //$ionicBackdrop.retain();
             if (!attrs.checked) {
               citypickerModel && citypickerModel.remove();
             }else{
