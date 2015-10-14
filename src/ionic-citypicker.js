@@ -61,7 +61,6 @@ app.directive('ionicCityPicker', ['$ionicPopup', '$timeout','CityPickerService',
                 country &&  (vm.country=vm.city.sub[index]);//处理乡数据
                 HandleChild && $ionicScrollDelegate.$getByHandle(HandleChild).scrollTop();//初始化子scroll top位
                 //数据同步
-                console.log(vm.city.sub);
                 (vm.city.sub && vm.city.sub.length>0) ? (scope.citydata=vm.province.name +vm.tag+  vm.city.name+vm.tag+vm.country.name ) :(scope.citydata=vm.province.name +vm.tag+  vm.city.name)
             },150)
           }else{
