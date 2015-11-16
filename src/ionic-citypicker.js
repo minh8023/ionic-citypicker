@@ -3,7 +3,6 @@ var app = angular.module('ionic-citypicker', ['ionic']);
 app.directive('ionicCityPicker', ['$ionicPopup', '$timeout','CityPickerService','$ionicScrollDelegate','$ionicModal', function ($ionicPopup, $timeout,CityPickerService, $ionicScrollDelegate,$ionicModal) {
   return {
     restrict: 'AE',
-    scope: true,
     template:  '<input type="text"  placeholder={{vm.placeholder}} ng-model="citydata"  class={{vm.cssClass}} readonly>',
     scope: {
       citydata: '=',
