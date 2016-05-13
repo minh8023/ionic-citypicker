@@ -18,13 +18,13 @@
   "ignore": [
     "node_modules",
     "demo.gif",
-  "src",
-  ".gitignore",
-  "bower.json",
-  "gulpfile.js",
-  "licence.txt",
-  "package.json",
-  "README.md"
+    "src",
+    ".gitignore",
+    "bower.json",
+    "gulpfile.js",
+    "licence.txt",
+    "package.json",
+    "README.md"
   ],
   "dependencies": {
     "ionic": ">=1.0.0"
