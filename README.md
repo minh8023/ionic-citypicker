@@ -1,16 +1,28 @@
 ###描述:
 模拟iOS选择器做的城市三级联动。
 
-插件适用于 ionic v1.3.0 delhi版本以及之前。
+插件适用于 `ionic v1.3.0 delhi`版本以及之前。
 
 ###效果图:
 ![效果图](demo.gif)
 
 ###安装:
-1.   `git clone https://github.com/minh8023/ionic-citypicker`
 
-	下载所有文件放到`www/lib`目录下
+1. bower安装
 
+	>bower install ionic-citypicker
+	
+	>这种方式最精简，最方便。［推荐］
+		
+	**或**
+	
+	git download安装
+	
+	>git clone https://github.com/minh8023/ionic-citypicker
+	
+	>下载所有文件放到`www/lib`目录下
+	
+	>这种方式可以进行自定义数据[参考目录结构](#tree)	
 2. 引入文件
 	在 `index.html`文件中引入 `ionic-citypicker.min.js`
 	
@@ -90,11 +102,11 @@
 ````
 
 ###具体配置
-* `areaData` Array required 城市数据绑定
+* `areaData` Array **required** 城市数据绑定
 
 * `buttonText` String 按钮名称 默认“完成”
 
-* `buttonClicked` Expression 点击“确定”后的回调函数
+* `buttonClicked` Expression 点击“完成”后的回调函数
 
 * `backdropClickToClose` Boolean  点击空白出关闭窗口 默认`false`
 
@@ -104,18 +116,19 @@
 
 * `cssClass` String 自定义自己的class
 
-* `defaultAreaData` Array 初始城市 eg: ['江苏', '无锡', '江阴市']
+* `defaultAreaData` Array 初始城市 eg: `['江苏', '无锡', '江阴市']`
 
 * `hardwareBackButtonClose` Boolean  安卓硬件返回 默认`true`
 
-* `iconClass` String 没有值的时候不显示图标 eg: ion-location
+* `iconClass` String 没有值的时候不显示图标 eg: `ion-location`
 
 * `tag` String 城市之间的分割符号 默认“－”
 
 * `title ` String 标题
 
-* `watchChange ` Boolean 默认`false` 外部更改城市数据绑定值 eg:例四
+* `watchChange ` Boolean 默认`false` 外部更改城市数据绑定值 eg:例4
 
+<div id="tree"></div>
 ###目录结构
 
 ````html
@@ -137,7 +150,7 @@
 	| |_templates
 	| | |_ionic-citypicker.html
 ````
-`cd ionic-citypicker && npm install`
+>cd ionic-citypicker && npm install
 
 自定义自己的需要的样式、数据，在`src `下面进行修改，修改完成后执行`gulp`合成`dist/ionic-citypicker.min.js`
 
