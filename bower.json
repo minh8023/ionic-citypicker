@@ -17,14 +17,14 @@
   "homepage": "https://github.com/minh8023/",
   "ignore": [
     "node_modules",
-    "publish",
-  	"src",
-  	".gitignore",
-  	"bower.json",
-  	"gulpfile.js",
-  	"licence.txt",
-  	"package.json",
-  	"README.md"
+    "demo.gif",
+  "src",
+  ".gitignore",
+  "bower.json",
+  "gulpfile.js",
+  "licence.txt",
+  "package.json",
+  "README.md"
   ],
   "dependencies": {
     "ionic": ">=1.0.0"
