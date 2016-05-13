@@ -3,33 +3,36 @@
 <div class="city-bgclose" ng-click="vm.clickToClose()" ></div>
 <div class="city-picker ">
   <header class=" bar city-picker-header" ng-class="vm.barCssClass">
+      <div class="buttons">
+        <button class="button button-clear button-positive" ng-click="vm.returnCancel()">取消</button>
+      </div>
       <h1 class="title"></h1>
       <div class="buttons">
-        <button class="button" ng-click="vm.returnOk()">{{vm.okText}}</button>
+        <button class="button button-clear button-positive" ng-click="vm.returnOk()">{{vm.buttonText}}</button>
       </div>
   </header>
   <div class="city-picker-inner has-header">
     <div class="row ">
       <div class="col col-33">
-        <ion-scroll delegate-handle={{vm.provinceHandle}}  on-scroll="vm.getData('province')" scrollbar-y=false >
+        <ion-scroll-minh delegate-handle={{vm.provinceHandle}}  on-scroll-complete="vm.getValue('province')" scrollbar-y=false >
           <ul >
-            <li ng-repeat="province in vm.cityData" >{{province.name}}</li>
+            <li ng-repeat="province in vm.AreaService" >{{province.name}}</li>
           </ul>
-        </ion-scroll>
+        </ion-scroll-minh>
       </div>
       <div class="col col-33">
-        <ion-scroll delegate-handle={{vm.cityHandle}}  on-scroll="vm.getData('city')" scrollbar-y=false>
+        <ion-scroll-minh delegate-handle={{vm.cityHandle}}  on-scroll-complete="vm.getValue('city')" scrollbar-y=false>
           <ul >
             <li  ng-repeat="city in vm.province.sub">{{city.name}}</li>
           </ul>
-        </ion-scroll>
+        </ion-scroll-minh>
       </div>
       <div class="col col-33">
-        <ion-scroll delegate-handle={{vm.countryHandle}} on-scroll="vm.getData('country')" scrollbar-y=false>
+        <ion-scroll-minh delegate-handle={{vm.countryHandle}} on-scroll-complete="vm.getValue('country')" scrollbar-y=false>
           <ul >
             <li  ng-repeat="country in vm.city.sub" >{{country.name}}</li>
           </ul>
-        </ion-scroll>
+        </ion-scroll-minh>
       </div>
   </div>
   <div class="picker-center-highlight"></div>

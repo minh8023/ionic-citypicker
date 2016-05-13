@@ -1,0 +1,32 @@
+{
+  "name": "ionic-citypicker",
+  "version": "0.2",
+  "authors": [
+    "Minh"
+  ],
+  "description": "Ionic CityPicker",
+  "main": [
+    "./dist/ionic-citypicker.min.js"
+  ],
+  "keywords": [
+    "ionic-citypicker",
+    "ionic",
+    "citypicker",
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/minh8023/",
+  "ignore": [
+    "node_modules",
+    "publish",
+  	"src",
+  	".gitignore",
+  	"bower.json",
+  	"gulpfile.js",
+  	"licence.txt",
+  	"package.json",
+  	"README.md"
+  ],
+  "dependencies": {
+    "ionic": ">=1.0.0"
+  }
+}

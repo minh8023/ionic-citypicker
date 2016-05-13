@@ -1,6 +1,6 @@
-var app = angular.module('ionic-citydata', ['ionic']);
-app.service('CityPickerService', function () {
-this.cityList = [
+"use strict";
+angular.module('ionic-citypicker.service', ['ionic']).factory('CityPickerService', function () {
+return [
     {
         "name":"北京",
         "sub":[
@@ -62,8 +62,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"广东",
@@ -112,8 +111,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"深圳",
@@ -140,8 +138,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"珠海",
@@ -159,8 +156,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"汕头",
@@ -190,8 +186,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"韶关",
@@ -230,8 +225,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"佛山",
@@ -255,8 +249,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"江门",
@@ -286,8 +279,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"湛江",
@@ -323,8 +315,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"茂名",
@@ -351,8 +342,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"肇庆",
@@ -385,8 +375,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"惠州",
@@ -410,8 +399,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"梅州",
@@ -444,8 +432,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"汕尾",
@@ -466,8 +453,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"河源",
@@ -494,8 +480,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阳江",
@@ -516,8 +501,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"清远",
@@ -550,22 +534,19 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"东莞",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"中山",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"潮州",
@@ -583,8 +564,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"揭阳",
@@ -608,8 +588,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"云浮",
@@ -633,8 +612,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -706,8 +684,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"天津",
@@ -770,8 +747,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"重庆",
@@ -900,8 +876,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"辽宁",
@@ -953,8 +928,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"大连",
@@ -993,8 +967,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鞍山",
@@ -1024,8 +997,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"抚顺",
@@ -1055,8 +1027,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"本溪",
@@ -1083,8 +1054,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"丹东",
@@ -1111,8 +1081,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"锦州",
@@ -1142,8 +1111,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"营口",
@@ -1170,8 +1138,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阜新",
@@ -1201,8 +1168,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"辽阳",
@@ -1232,8 +1198,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"盘锦",
@@ -1254,8 +1219,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"铁岭",
@@ -1285,8 +1249,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"朝阳",
@@ -1316,8 +1279,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"葫芦岛",
@@ -1344,8 +1306,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -1403,8 +1364,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"苏州",
@@ -1446,8 +1406,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"无锡",
@@ -1480,8 +1439,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"常州",
@@ -1511,8 +1469,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"镇江",
@@ -1539,8 +1496,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"南通",
@@ -1573,8 +1529,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"泰州",
@@ -1601,8 +1556,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"扬州",
@@ -1632,8 +1586,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"盐城",
@@ -1669,8 +1622,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"连云港",
@@ -1700,8 +1652,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"徐州",
@@ -1743,8 +1694,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"淮安",
@@ -1777,8 +1727,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宿迁",
@@ -1802,8 +1751,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -1861,8 +1809,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黄石",
@@ -1889,8 +1836,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"十堰",
@@ -1923,8 +1869,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"荆州",
@@ -1957,8 +1902,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宜昌",
@@ -2006,8 +1950,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"襄樊",
@@ -2043,8 +1986,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鄂州",
@@ -2062,8 +2004,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"荆门",
@@ -2087,8 +2028,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"孝感",
@@ -2118,8 +2058,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黄冈",
@@ -2158,8 +2097,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"咸宁",
@@ -2186,8 +2124,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"随州",
@@ -2202,8 +2139,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"恩施土家族苗族自治州",
@@ -2236,36 +2172,31 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"仙桃",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"天门",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"潜江",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"神农架林区",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -2341,8 +2272,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"自贡",
@@ -2369,8 +2299,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"攀枝花",
@@ -2394,8 +2323,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"泸州",
@@ -2425,8 +2353,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"德阳",
@@ -2453,8 +2380,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"绵阳",
@@ -2490,8 +2416,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"广元",
@@ -2521,8 +2446,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"遂宁",
@@ -2546,8 +2470,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"内江",
@@ -2571,8 +2494,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"乐山",
@@ -2614,8 +2536,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"南充",
@@ -2651,8 +2572,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"眉山",
@@ -2679,8 +2599,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宜宾",
@@ -2719,8 +2638,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"广安",
@@ -2744,8 +2662,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"达州",
@@ -2775,8 +2692,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"雅安",
@@ -2809,8 +2725,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"巴中",
@@ -2831,8 +2746,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"资阳",
@@ -2853,8 +2767,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阿坝藏族羌族自治州",
@@ -2902,8 +2815,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"甘孜藏族自治州",
@@ -2966,8 +2878,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"凉山彝族自治州",
@@ -3027,8 +2938,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -3086,8 +2996,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"铜川",
@@ -3108,8 +3017,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宝鸡",
@@ -3154,8 +3062,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"咸阳",
@@ -3206,8 +3113,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"渭南",
@@ -3249,8 +3155,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"延安",
@@ -3298,8 +3203,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"汉中",
@@ -3341,8 +3245,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"榆林",
@@ -3387,8 +3290,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"安康",
@@ -3427,8 +3329,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"商洛",
@@ -3458,8 +3359,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -3547,8 +3447,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"唐山",
@@ -3599,8 +3498,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"秦皇岛",
@@ -3630,8 +3528,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"邯郸",
@@ -3697,8 +3594,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"邢台",
@@ -3764,8 +3660,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"保定",
@@ -3849,8 +3744,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"张家口",
@@ -3910,8 +3804,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"承德",
@@ -3953,8 +3846,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"沧州",
@@ -4011,8 +3903,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"廊坊",
@@ -4051,8 +3942,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"衡水",
@@ -4094,8 +3984,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -4144,8 +4033,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"大同",
@@ -4187,8 +4075,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阳泉",
@@ -4212,8 +4099,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"长治",
@@ -4261,8 +4147,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"晋城",
@@ -4289,8 +4174,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"朔州",
@@ -4317,8 +4201,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"晋中",
@@ -4360,8 +4243,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"运城",
@@ -4409,8 +4291,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"忻州",
@@ -4461,8 +4342,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"临汾",
@@ -4522,8 +4402,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"吕梁",
@@ -4571,8 +4450,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -4627,8 +4505,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"开封",
@@ -4667,8 +4544,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"洛阳",
@@ -4722,8 +4598,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"平顶山",
@@ -4762,8 +4637,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"安阳",
@@ -4799,8 +4673,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鹤壁",
@@ -4824,8 +4697,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"新乡",
@@ -4870,8 +4742,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"焦作",
@@ -4910,8 +4781,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"濮阳",
@@ -4938,8 +4808,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"许昌",
@@ -4966,8 +4835,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"漯河",
@@ -4991,8 +4859,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"三门峡",
@@ -5019,8 +4886,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"南阳",
@@ -5068,8 +4934,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"商丘",
@@ -5105,8 +4970,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"信阳",
@@ -5145,8 +5009,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"周口",
@@ -5185,8 +5048,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"驻马店",
@@ -5225,8 +5087,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"焦作",
@@ -5238,8 +5099,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -5288,8 +5148,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"吉林",
@@ -5325,8 +5184,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"四平",
@@ -5353,8 +5211,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"辽源",
@@ -5375,8 +5232,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"通化",
@@ -5406,8 +5262,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"白山",
@@ -5434,8 +5289,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"松原",
@@ -5459,8 +5313,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"白城",
@@ -5484,8 +5337,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"延边朝鲜族自治州",
@@ -5518,8 +5370,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -5592,8 +5443,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"齐齐哈尔",
@@ -5650,8 +5500,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鹤岗",
@@ -5684,8 +5533,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"双鸭山",
@@ -5718,8 +5566,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鸡西",
@@ -5755,8 +5602,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"大庆",
@@ -5792,8 +5638,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"伊春",
@@ -5853,8 +5698,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"牡丹江",
@@ -5893,8 +5737,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"佳木斯",
@@ -5933,8 +5776,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"七台河",
@@ -5955,8 +5797,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黑河",
@@ -5983,8 +5824,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"绥化",
@@ -6023,8 +5863,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"大兴安岭地区",
@@ -6045,8 +5884,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -6092,8 +5930,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"包头",
@@ -6129,8 +5966,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"乌海",
@@ -6148,8 +5984,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"赤峰",
@@ -6194,8 +6029,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"通辽",
@@ -6228,8 +6062,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鄂尔多斯",
@@ -6262,8 +6095,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"呼伦贝尔",
@@ -6311,8 +6143,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"巴彦淖尔",
@@ -6342,8 +6173,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"乌兰察布",
@@ -6385,8 +6215,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"锡林郭勒盟",
@@ -6431,8 +6260,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"兴安盟",
@@ -6459,8 +6287,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阿拉善盟",
@@ -6478,8 +6305,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -6528,8 +6354,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"青岛",
@@ -6574,8 +6399,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"淄博",
@@ -6608,8 +6432,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"枣庄",
@@ -6636,8 +6459,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"东营",
@@ -6661,8 +6483,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"烟台",
@@ -6707,8 +6528,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"潍坊",
@@ -6753,8 +6573,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"济宁",
@@ -6799,8 +6618,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"泰安",
@@ -6827,8 +6645,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"威海",
@@ -6849,8 +6666,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"日照",
@@ -6871,8 +6687,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"莱芜",
@@ -6887,8 +6702,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"临沂",
@@ -6933,8 +6747,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"德州",
@@ -6976,8 +6789,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"聊城",
@@ -7010,8 +6822,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"滨州",
@@ -7041,8 +6852,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"菏泽",
@@ -7078,8 +6888,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -7119,8 +6928,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"芜湖",
@@ -7150,8 +6958,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"蚌埠",
@@ -7181,8 +6988,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"淮南",
@@ -7209,8 +7015,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"马鞍山",
@@ -7231,8 +7036,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"淮北",
@@ -7253,8 +7057,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"铜陵",
@@ -7275,8 +7078,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"安庆",
@@ -7318,8 +7120,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黄山",
@@ -7349,8 +7150,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"滁州",
@@ -7383,8 +7183,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阜阳",
@@ -7417,8 +7216,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宿州",
@@ -7442,8 +7240,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"巢湖",
@@ -7467,8 +7264,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"六安",
@@ -7498,8 +7294,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"亳州",
@@ -7520,8 +7315,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"池州",
@@ -7542,8 +7336,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宣城",
@@ -7573,8 +7366,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -7632,8 +7424,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宁波",
@@ -7675,8 +7466,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"温州",
@@ -7718,8 +7508,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"嘉兴",
@@ -7749,8 +7538,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"湖州",
@@ -7774,8 +7562,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"绍兴",
@@ -7802,8 +7589,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"金华",
@@ -7839,8 +7625,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"衢州",
@@ -7867,8 +7652,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"舟山",
@@ -7889,8 +7673,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"台州",
@@ -7926,8 +7709,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"丽水",
@@ -7963,8 +7745,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -8022,8 +7803,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"厦门",
@@ -8050,8 +7830,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"莆田",
@@ -8075,8 +7854,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"三明",
@@ -8121,8 +7899,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"泉州",
@@ -8167,8 +7944,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"漳州",
@@ -8210,8 +7986,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"南平",
@@ -8250,8 +8025,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"龙岩",
@@ -8281,8 +8055,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宁德",
@@ -8318,8 +8091,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -8365,8 +8137,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"株洲",
@@ -8402,8 +8173,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"湘潭",
@@ -8427,8 +8197,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"衡阳",
@@ -8473,8 +8242,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"邵阳",
@@ -8519,8 +8287,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"岳阳",
@@ -8556,8 +8323,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"常德",
@@ -8593,8 +8359,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"张家界",
@@ -8615,8 +8380,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"益阳",
@@ -8643,8 +8407,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"郴州",
@@ -8686,8 +8449,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"永州",
@@ -8729,8 +8491,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"怀化",
@@ -8775,8 +8536,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"娄底",
@@ -8800,8 +8560,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"湘西土家族苗族自治州",
@@ -8834,8 +8593,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -8890,8 +8648,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"柳州",
@@ -8930,8 +8687,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"桂林",
@@ -8991,8 +8747,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"梧州",
@@ -9022,8 +8777,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"北海",
@@ -9044,8 +8798,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"防城港",
@@ -9066,8 +8819,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"钦州",
@@ -9088,8 +8840,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"贵港",
@@ -9113,8 +8864,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"玉林",
@@ -9141,8 +8891,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"百色",
@@ -9187,8 +8936,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"贺州",
@@ -9209,8 +8957,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"河池",
@@ -9252,8 +8999,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"来宾",
@@ -9280,8 +9026,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"崇左",
@@ -9311,8 +9056,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -9358,8 +9102,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"景德镇",
@@ -9380,8 +9123,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"萍乡",
@@ -9405,8 +9147,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"九江",
@@ -9451,8 +9192,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"新余",
@@ -9467,8 +9207,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"鹰潭",
@@ -9486,8 +9225,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"赣州",
@@ -9550,8 +9288,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"吉安",
@@ -9599,8 +9336,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"宜春",
@@ -9639,8 +9375,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"抚州",
@@ -9682,8 +9417,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"上饶",
@@ -9728,8 +9462,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -9778,8 +9511,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"六盘水",
@@ -9800,8 +9532,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"遵义",
@@ -9852,8 +9583,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"安顺",
@@ -9880,8 +9610,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"铜仁地区",
@@ -9920,8 +9649,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"毕节地区",
@@ -9954,8 +9682,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黔西南布依族苗族自治州",
@@ -9988,8 +9715,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黔东南苗族侗族自治州",
@@ -10046,8 +9772,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黔南布依族苗族自治州",
@@ -10092,8 +9817,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -10154,8 +9878,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"曲靖",
@@ -10191,8 +9914,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"玉溪",
@@ -10228,8 +9950,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"保山",
@@ -10253,8 +9974,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"昭通",
@@ -10296,8 +10016,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"丽江",
@@ -10321,8 +10040,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"普洱",
@@ -10361,8 +10079,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"临沧",
@@ -10395,8 +10112,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"德宏傣族景颇族自治州",
@@ -10420,8 +10136,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"怒江傈僳族自治州",
@@ -10442,8 +10157,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"迪庆藏族自治州",
@@ -10461,8 +10175,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"大理白族自治州",
@@ -10507,8 +10220,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"楚雄彝族自治州",
@@ -10547,8 +10259,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"红河哈尼族彝族自治州",
@@ -10596,8 +10307,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"文山壮族苗族自治州",
@@ -10630,8 +10340,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"西双版纳傣族自治州",
@@ -10649,8 +10358,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -10693,8 +10401,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"那曲地区",
@@ -10733,8 +10440,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"昌都地区",
@@ -10776,8 +10482,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"林芝地区",
@@ -10807,8 +10512,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"山南地区",
@@ -10853,8 +10557,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"日喀则地区",
@@ -10917,8 +10620,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阿里地区",
@@ -10948,8 +10650,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -10980,8 +10681,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"三亚",
@@ -10993,120 +10693,103 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"五指山",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"琼海",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"儋州",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"文昌",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"万宁",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"东方",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"澄迈县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"定安县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"屯昌县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"临高县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"白沙黎族自治县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"昌江黎族自治县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"乐东黎族自治县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"陵水黎族自治县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"保亭黎族苗族自治县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"琼中黎族苗族自治县",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -11149,8 +10832,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"嘉峪关",
@@ -11162,8 +10844,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"金昌",
@@ -11178,8 +10859,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"白银",
@@ -11203,8 +10883,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"天水",
@@ -11234,8 +10913,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"武威",
@@ -11256,8 +10934,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"酒泉",
@@ -11287,8 +10964,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"张掖",
@@ -11315,8 +10991,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"庆阳",
@@ -11349,8 +11024,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"平凉",
@@ -11380,8 +11054,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"定西",
@@ -11411,8 +11084,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"陇南",
@@ -11448,8 +11120,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"临夏回族自治州",
@@ -11482,8 +11153,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"甘南藏族自治州",
@@ -11516,8 +11186,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -11554,8 +11223,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"石嘴山",
@@ -11573,8 +11241,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"吴忠",
@@ -11595,8 +11262,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"固原",
@@ -11620,8 +11286,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"中卫",
@@ -11639,8 +11304,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -11680,8 +11344,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"海东地区",
@@ -11708,8 +11371,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"海北藏族自治州",
@@ -11730,8 +11392,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"海南藏族自治州",
@@ -11755,8 +11416,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"黄南藏族自治州",
@@ -11777,8 +11437,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"果洛藏族自治州",
@@ -11805,8 +11464,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"玉树藏族自治州",
@@ -11833,8 +11491,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"海西蒙古族藏族自治州",
@@ -11858,8 +11515,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -11902,8 +11558,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"克拉玛依",
@@ -11924,8 +11579,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"吐鲁番地区",
@@ -11943,8 +11597,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"哈密地区",
@@ -11962,8 +11615,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"和田地区",
@@ -11996,8 +11648,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阿克苏地区",
@@ -12033,8 +11684,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"喀什地区",
@@ -12079,8 +11729,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"克孜勒苏柯尔克孜自治州",
@@ -12101,8 +11750,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"巴音郭楞蒙古自治州",
@@ -12138,8 +11786,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"昌吉回族自治州",
@@ -12172,8 +11819,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"博尔塔拉蒙古自治州",
@@ -12191,36 +11837,31 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"石河子",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"阿拉尔",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"图木舒克",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"五家渠",
                 "sub":[
 
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"伊犁哈萨克自治州",
@@ -12265,8 +11906,7 @@ this.cityList = [
                     {
                         "name":"其他"
                     }
-                ],
-                "type":0
+                ]
             },
             {
                 "name":"其他"
@@ -12335,8 +11975,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"澳门",
@@ -12369,8 +12008,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"台湾",
@@ -12448,8 +12086,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     },
     {
         "name":"海外",
@@ -12458,8 +12095,7 @@ this.cityList = [
             {
                 "name":"其他"
             }
-        ],
-        "type":0
+        ]
     }
 ];
 });

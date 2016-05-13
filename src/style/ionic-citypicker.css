@@ -8,20 +8,20 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.1s opacity linear;
     transition: 0.1s opacity linear;
 }
 .city-bgclose{
     width: 100%;
-    height: 100%; 
+    height: 100%;
     z-index: 2;
     position: absolute;
 }
 .city-picker{
     z-index: 3;
     position: absolute;
-    background: #cfd5da;
+    background: #eee;
     width: 100%;
     height: 296px;
     bottom: 0;
@@ -31,7 +31,16 @@
     height: 44px;
     width: 100%;
 }
-.city-picker ion-scroll li {
+.city-picker .city-picker-header .button{
+    font-size: 18px;
+}
+.city-picker .ionic-scroll{
+  height: 252px;
+}
+.city-picker .ionic-scroll .scroll{
+    padding: 108px 0;
+}
+.city-picker .ionic-scroll li {
     position: relative;
     top: 0;
     left: 0;
@@ -63,15 +72,10 @@
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    -webkit-mask-box-image: -webkit-linear-gradient(bottom, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
-    -webkit-mask-box-image: linear-gradient(to top, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+    /*-webkit-mask-box-image: -webkit-linear-gradient(bottom, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+    -webkit-mask-box-image: linear-gradient(to top, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);*/
 }
-.city-picker ion-scroll{
-  height: 252px;
-}
-.city-picker .scroll{
-    padding: 108px 0;
-}
+
 .city-picker .picker-center-highlight {
   position: absolute;
   top: 0;
@@ -84,7 +88,7 @@
   margin-top: 0px;
   pointer-events: none;
 }
-.city-picker .picker-center-highlight:after {
+/*.city-picker .picker-center-highlight:after {
     position: absolute;
     top: auto;
     right: auto;
@@ -119,5 +123,51 @@
       -ms-transform-origin: 50% 0;
        -o-transform-origin: 50% 0;
           transform-origin: 50% 0;
+}*/
+
+.city-picker .picker-center-highlight:before {
+  height: 100%;
+  margin: 0 auto;
+  z-index: 3;
+  background-image: -webkit-linear-gradient(top,hsla(0,0%,100%,.95),hsla(0,0%,100%,.6)),-webkit-linear-gradient(bottom,hsla(0,0%,100%,.95),hsla(0,0%,100%,.6));
+  background-image: linear-gradient(180deg,hsla(0,0%,100%,.95),hsla(0,0%,100%,.6)),linear-gradient(0deg,hsla(0,0%,100%,.95),hsla(0,0%,100%,.6));
+  background-position: top,bottom;
+  background-size: 100% 108px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+}
+.city-picker .picker-center-highlight:after {
+  content: '';
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top:-18px;
+  z-index: 3;
+  background-image: -webkit-linear-gradient(top,#d0d0d0,#d0d0d0,transparent,transparent),-webkit-linear-gradient(bottom,#d0d0d0,#d0d0d0,transparent,transparent);
+  background-image: linear-gradient(180deg,#d0d0d0,#d0d0d0,transparent,transparent),linear-gradient(0deg,#d0d0d0,#d0d0d0,transparent,transparent);
+  background-position: top,bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
 }
 .city-picker .row,.city-picker  .col{padding: 0;}
+.ionic-citypicker .item-note:after{
+  content: " ";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  position: relative;
+  top: -2px;
+  top: -1px;
+  margin-left: .3em;
+}
