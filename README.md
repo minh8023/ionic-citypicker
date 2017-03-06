@@ -3,6 +3,8 @@
 
 插件适用于 `ionic v1.3.0 delhi`版本以及之前。
 
+关于安卓机器的问题， [戳这里](https://github.com/minh8023/ionic-citypicker/issues/10)，[还有这里](https://github.com/minh8023/ionic-citypicker/issues/4)
+
 ###效果图:
 ![效果图](demo.gif)
 
