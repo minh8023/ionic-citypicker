@@ -39,4 +39,6 @@ gulp.task('delete-trash', ['minify-all'], function () {
     del(['dist/templates.js', 'dist/ionic-citypicker.js']);
 });
 
-gulp.task('default', ['delete-trash'], function () {});
+gulp.task('default', ['delete-trash'], function () {
+
+});
