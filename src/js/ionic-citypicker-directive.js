@@ -82,6 +82,7 @@ function($timeout, $controller, $ionicBind, $ionicConfig) {
          });
 
         function onScrollComplete() {
+
           $scope.$onScrollComplete({
             scrollTop: scrollCtrl.scrollView.__scrollTop,
             scrollLeft: scrollCtrl.scrollView.__scrollLeft

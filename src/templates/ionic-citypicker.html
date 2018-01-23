@@ -14,21 +14,24 @@
   <div class="city-picker-inner has-header">
     <div class="row ">
       <div class="col col-33">
-        <ion-scroll-minh delegate-handle={{vm.provinceHandle}}  on-scroll-complete="vm.getValue('province')" scrollbar-y=false >
+        <ion-scroll-minh  delegate-handle={{vm.provinceHandle}}  on-scroll-complete="vm.getValue('province')" overflow-scroll="false"
+                          scrollbar-y="false"  on-release="vm.getValue('province')">
           <ul >
             <li ng-repeat="province in vm.AreaService" >{{province.name}}</li>
           </ul>
         </ion-scroll-minh>
       </div>
       <div class="col col-33">
-        <ion-scroll-minh delegate-handle={{vm.cityHandle}}  on-scroll-complete="vm.getValue('city')" scrollbar-y=false>
+        <ion-scroll-minh overflow-scroll="false" delegate-handle={{vm.cityHandle}}  on-scroll-complete="vm.getValue('city')" scrollbar-y="false"
+                         on-release="vm.getValue('city')">
           <ul >
             <li  ng-repeat="city in vm.province.sub">{{city.name}}</li>
           </ul>
         </ion-scroll-minh>
       </div>
       <div class="col col-33">
-        <ion-scroll-minh delegate-handle={{vm.countryHandle}} on-scroll-complete="vm.getValue('country')" scrollbar-y=false>
+        <ion-scroll-minh overflow-scroll="false" delegate-handle={{vm.countryHandle}} on-scroll-complete="vm.getValue('country')" scrollbar-y="false"
+                         on-release="vm.getValue('country')">
           <ul >
             <li  ng-repeat="country in vm.city.sub" >{{country.name}}</li>
           </ul>
